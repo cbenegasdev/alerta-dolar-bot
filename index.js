@@ -21,6 +21,7 @@ async function obtenerDolar() {
 
 async function enviarMensaje(texto) {
   await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${encodeURIComponent(texto)}`);
+  await fetch(`https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${texto}`);
 }
 
 // === Servidor Express ===
