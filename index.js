@@ -26,6 +26,9 @@ async function enviarMensaje(texto) {
 // === Servidor Express ===
 const app = express();
 app.use(express.json());
+app.get('/hola', async (req, res) => {
+  res.send({'hola':'mundo'})
+})
 
 app.post(`/webhook/${BOT_TOKEN}`, async (req, res) => {
   const message = req.body.message;
