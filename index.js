@@ -5,7 +5,7 @@ const BOT_TOKEN = process.env.BOT_TOKEN;
 const CHAT_ID = process.env.CHAT_ID;
 const API_URL = "https://api.bluelytics.com.ar/v2/latest";
 
-let umbral = 1420;
+let umbral = 1620;
 let ultimoValor = null;
 
 // === Funciones auxiliares ===
