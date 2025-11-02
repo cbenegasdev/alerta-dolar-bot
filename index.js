@@ -29,6 +29,7 @@ app.use(express.json());
 
 app.post(`/webhook/${BOT_TOKEN}`, async (req, res) => {
   const message = req.body.message;
+  console.log(req.body)
   if (!message || !message.text) return res.sendStatus(200);
 
   const text = message.text.trim();
